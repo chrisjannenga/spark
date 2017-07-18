@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Thin.ttf");
+}
+
+.headerBar {
+  background-color: #ffa726;
+  width: 100%;
+  height: 8vh;
+}
+
+.sparkText {
+  color: white;
+  font-family: Roboto-Thin;
+  text-align: right;
+  margin-right: 2vw;
+  padding-bottom: 50%;
+  vertical-align: middle;
+  font-size: 1.4em;
+}

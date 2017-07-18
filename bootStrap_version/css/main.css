@@ -1,0 +1,54 @@
+.container-fluid {
+  background: url("file:///Users/cjannenga/workspace/spark/bootStrap_version/imgs/sparkLanding.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Thin.ttf");
+}
+
+.sparkText h1 {
+  font-family: Roboto-Thin;
+  color: #ffa726;
+  font-size: 10em;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  padding-top: 40vh;
+}
+
+input::placeholder {
+  color: grey;
+  font-family: Roboto-Light;
+}
+
+.btnShadow {
+  box-shadow: 3px 3px 3px black;
+}
+
+.form-control {
+  width: 70%;
+  /*margin-left: 32vw;
+  margin-top: 2vh;*/
+  text-align: center;
+  box-shadow: 3px 3px 3px black;
+}
+
+.generatorText h2 {
+  font-family: Roboto-Thin;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  padding-top: ;
+}

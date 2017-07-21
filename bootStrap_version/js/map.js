@@ -44,9 +44,10 @@ $(document).ready(function() {
         map: map,
         title: 'Dinner',
       });
-      //console.log(markerOne);
+      console.log(markerOne);
+      console.log(markerTwo);
       var marker = new google.maps.Marker({
-        position: heard,
+        position: markerTwo,
         map: map,
         title: 'Activity'
       });
@@ -54,7 +55,7 @@ $(document).ready(function() {
     };
 
     var markerOne = {};
-    // var markerTwo = {};
+    var markerTwo = {};
     // console.log(markerTwo);
     // console.log(markerTwo.lat + markerTwo.lng);
     //console.log(markerOne);
@@ -70,14 +71,12 @@ $(document).ready(function() {
     }
 
     $.ajax(settings).done(function(response) {
-      console.log(response.results);
+      // console.log(response.results);
       //console.log(response.results[4].name);
       markerOne.lat = response.results[3].geometry.location.lat;
       markerOne.lng = response.results[3].geometry.location.lng;
       $("#resultOneName").append(response.results[3].name);
       $("#resultOneAddress").append(response.results[3].vicinity);
-
-
 
       var settingsActivity = {
         "async": true,
@@ -91,12 +90,15 @@ $(document).ready(function() {
       }
 
       $.ajax(settingsActivity).done(function(activitySearch) {
-        // markerTwo.lat = activitySearch.results[6].geometry.location.lat;
-        // markerTwo.lng = activitySearch.results[6].geometry.location.lng;
+        markerTwo.lat = activitySearch.results[1].geometry.location.lat;
+        markerTwo.lng = activitySearch.results[1].geometry.location.lng;
         $("#resultTwoName").append(activitySearch.results[1].name);
         $("#resultTwoAddress").append(activitySearch.results[1].vicinity);
+        initMap();
       });
-      initMap();
+
+
+
     });
   });
 })

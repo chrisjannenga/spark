@@ -90,10 +90,10 @@ $(document).ready(function() {
       }
 
       $.ajax(settingsActivity).done(function(activitySearch) {
-        markerTwo.lat = activitySearch.results[1].geometry.location.lat;
-        markerTwo.lng = activitySearch.results[1].geometry.location.lng;
-        $("#resultTwoName").append(activitySearch.results[1].name);
-        $("#resultTwoAddress").append(activitySearch.results[1].vicinity);
+        markerTwo.lat = activitySearch.results[2].geometry.location.lat;
+        markerTwo.lng = activitySearch.results[2].geometry.location.lng;
+        $("#resultTwoName").append(activitySearch.results[2].name);
+        $("#resultTwoAddress").append(activitySearch.results[2].vicinity);
         initMap();
       });
 

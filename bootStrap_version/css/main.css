@@ -1,54 +1,128 @@
-.container-fluid {
-  background: url("file:///Users/cjannenga/workspace/spark/bootStrap_version/imgs/sparkLanding.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-}
+    .backgroundImage {
+      background: url("file:///Users/cjannenga/workspace/spark/bootStrap_version/imgs/sparkLanding.png") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+    }
 
-@font-face {
-  font-family: Roboto-Light;
-  src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Light.ttf");
-}
+    @font-face {
+      font-family: Roboto-Light;
+      src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Light.ttf");
+    }
 
-@font-face {
-  font-family: Roboto-Thin;
-  src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Thin.ttf");
-}
+    @font-face {
+      font-family: Roboto-Thin;
+      src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Thin.ttf");
+    }
 
-.sparkText h1 {
-  font-family: Roboto-Thin;
-  color: #ffa726;
-  font-size: 10em;
-  text-align: center;
-  text-shadow: 3px 3px black;
-  padding-top: 40vh;
-}
+    .sparkText h1 {
+      font-family: Roboto-Thin;
+      color: #ffa726;
+      font-size: 10em;
+      text-align: center;
+      text-shadow: 3px 3px black;
+      padding-top: 40vh;
+    }
 
-input::placeholder {
-  color: grey;
-  font-family: Roboto-Light;
-}
+    input::placeholder {
+      color: grey;
+      font-family: Roboto-Light;
+    }
 
-.btnShadow {
-  box-shadow: 3px 3px 3px black;
-}
+    .btnShadow {
+      box-shadow: 3px 3px 3px black;
+    }
 
-.form-control {
-  width: 70%;
-  /*margin-left: 32vw;
+    .searchBar {
+      width: 100%;
+      height: 34px;
+      /*margin-left: 32vw;
   margin-top: 2vh;*/
-  text-align: center;
-  box-shadow: 3px 3px 3px black;
-}
+      text-align: center;
+      box-shadow: 3px 3px 3px black;
+    }
 
-.generatorText h2 {
-  font-family: Roboto-Thin;
-  color: #fff;
-  font-size: 2em;
-  text-align: center;
-  text-shadow: 2px 2px black;
-  padding-top: ;
-}
+    .generatorText h2 {
+      font-family: Roboto-Thin;
+      color: #fff;
+      font-size: 2em;
+      text-align: center;
+      text-shadow: 2px 2px black;
+      padding-top: ;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .headerBar {
+      background-color: #ffa726;
+      width: 100%;
+      height: 8vh;
+      box-shadow: 3px 3px 3px black;
+    }
+
+    .sparkTextMapPage {
+      color: white;
+      font-family: Roboto-Light;
+      text-align: right;
+      margin-right: 2vw;
+      padding-bottom: 50%;
+      vertical-align: middle;
+      font-size: 3rem;
+      font-weight: ;
+      text-shadow: 1px 1px black;
+    }
+
+    .sideBar {
+      height: 92vh;
+      background-color: #f9f9f9;
+      box-shadow: 3px 3px 3px black;
+    }
+
+    .BorderTest {
+      background-color: green;
+      width: ;
+      height: 92vh;
+    }
+
+    #map {
+      height: 92vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    #resultOneName {
+      margin-top: 10vh;
+      color: #ffa726;
+      font-family: Roboto-Light;
+      text-align: center;
+      text-shadow: 1px 1px black;
+      font-size: 4rem;
+      border-bottom: solid 1px #ffa726;
+    }
+
+    #resultOneAddress {
+      font-family: Roboto-Light;
+      text-align: center;
+    }
+
+    #resultTwoName {
+      margin-top: 10vh;
+      color: #ffa726;
+      font-family: Roboto-Light;
+      text-align: center;
+      text-shadow: 1px 1px black;
+      font-size: 4rem;
+      border-bottom: solid 1px #ffa726;
+    }
+
+    #resultTwoAddress {
+      font-family: Roboto-Light;
+      text-align: center;
+    }

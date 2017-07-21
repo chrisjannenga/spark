@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bootstrap</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -13,10 +14,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Users/cjannenga/workspace/spark/bootStrap_version/css/main.css">
+    <!-- <link rel="stylesheet" href="/Users/cjannenga/workspace/spark/bootStrap_version/css/results.css"> -->
+    <script src="/Users/cjannenga/workspace/spark/bootStrap_version/js/results.js" charset="utf-8"></script>
+    <script src="/Users/cjannenga/workspace/spark/bootStrap_version/js/map.js" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUoiaJ4KpJcxYMF5tYEBTeHGwhmxfp60I&libraries=places&callback=initAutocomplete" async defer></script>
+
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid backgroundImage">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 sparkText">
           <h1>Spark.</h1>
@@ -25,9 +31,11 @@
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Where are you dating?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Where are you dating?'">
+            <input id="pac-input" class="searchBar" type="text" placeholder="Where are you dating?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Where are you dating?'">
+            <!-- <input type="text" id="searchText" class="form-control" placeholder="Where are you dating?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Where are you dating?'"> -->
+
             <span class="input-group-btn">
-      <button class="btn btn-default btnShadow" type="button" onclick="window.location.href='/Users/cjannenga/workspace/spark/bootStrap_version/results.html'">Go!</button>
+      <button class="btn btn-default btnShadow" id="searchButton" type="button">Go!</button>
     </span>
           </div>
           <!-- /input-group -->

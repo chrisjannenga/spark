@@ -1,3 +1,9 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Roboto-Light;
   src: url("/Users/cjannenga/workspace/spark/bootStrap_version/Roboto-Light.ttf");
@@ -12,14 +18,34 @@
   background-color: #ffa726;
   width: 100%;
   height: 8vh;
+  box-shadow: 3px 3px 3px black;
 }
 
 .sparkText {
   color: white;
-  font-family: Roboto-Thin;
+  font-family: Roboto-Light;
   text-align: right;
   margin-right: 2vw;
   padding-bottom: 50%;
   vertical-align: middle;
-  font-size: 1.4em;
+  font-size: 3em;
+  font-weight: ;
+  text-shadow: 1px 1px black;
 }
+
+.sideBar {
+  height: 92vh;
+  background-color: #f9f9f9;
+  box-shadow: 3px 3px 3px black;
+}
+
+.BorderTest {
+  background-color: green;
+  width: ;
+  height: 92vh;
+}
+
+#map {
+  height: 92vh;
+  margin: 0;
+  padding: 0;
